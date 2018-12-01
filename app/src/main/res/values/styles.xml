@@ -3,9 +3,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -16,5 +16,40 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MainMenuButtonLayout">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/main_menu_item_shape</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MainMenuButtonImage">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="MainMenuButtonText">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/main_menu_font_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SensorText">
+        <item name="android:textSize">@dimen/font_size_medium</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/sensor_font_color</item>
+    </style>
+
+    <style name="SensorTextHeader">
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/sensor_font_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 
 </resources>
