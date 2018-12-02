@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     private LinearLayout btnSensors;
     private LinearLayout btnCamera;
+    private LinearLayout btnSplitScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,22 +26,27 @@ public class MainActivity extends AppCompatActivity {
 
         btnSensors = (LinearLayout) findViewById(R.id.layoutSensors);
         btnCamera = (LinearLayout) findViewById(R.id.layoutCamera);
+        btnSplitScreen = (LinearLayout) findViewById(R.id.layoutVR);
 
         btnSensors.setOnClickListener(btnClickListener);
         btnCamera.setOnClickListener(btnClickListener);
+        btnSplitScreen.setOnClickListener(btnClickListener);
 
     }
 
     private RelativeLayout.OnClickListener btnClickListener = v -> {
-        switch (v.getId()) {
+        Intent intent;
 
+        switch (v.getId()) {
             case R.id.layoutSensors:
-                Intent intent = new Intent(this, SensorActivity.class);
+                intent = new Intent(this, SensorActivity.class);
                 startActivity(intent);
                 break;
             case R.id.layoutCamera:
                 break;
             case R.id.layoutVR:
+                intent = new Intent(this, SplitScreenActivity.class);
+                startActivity(intent);
                 break;
         }
     };
