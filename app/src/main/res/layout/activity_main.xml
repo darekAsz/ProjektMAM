@@ -61,6 +61,28 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layoutVR"
+        style="@style/MainMenuButtonLayout"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewVR"
+            style="@style/MainMenuButtonImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_split_screen" />
+
+        <TextView
+            style="@style/MainMenuButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_menu_split_screen" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_weight="2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -4,7 +4,7 @@
 
     <string name="main_menu_sensors">Sensory</string>
     <string name="main_menu_camera">Kamera</string>
-    <string name="main_menu_placeholder">Chuj</string>
+    <string name="main_menu_split_screen">Podział ekranu</string>
 
     <string name="sensor_x">X:</string>
     <string name="sensor_y">Y:</string>

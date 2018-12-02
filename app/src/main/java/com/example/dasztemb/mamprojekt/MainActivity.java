@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.layoutCamera:
                 break;
+            case R.id.layoutVR:
+                break;
         }
     };
 }
