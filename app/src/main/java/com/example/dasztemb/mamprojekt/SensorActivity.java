@@ -36,15 +36,15 @@ public class SensorActivity extends AppCompatActivity implements SensorEventList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sensor);
 
-        txtAccX = findViewById(R.id.txtAccelerationX);
-        txtAccY = findViewById(R.id.txtAccelerationY);
-        txtAccZ = findViewById(R.id.txtAccelerationZ);
-        txtMagneticX = findViewById(R.id.txtMagneticX);
-        txtMagneticY = findViewById(R.id.txtMagneticY);
-        txtMagneticZ = findViewById(R.id.txtMagneticZ);
-        txtGravityX = findViewById(R.id.txtGravityX);
-        txtGravityY = findViewById(R.id.txtGravityY);
-        txtGravityZ = findViewById(R.id.txtGravityZ);
+        txtAccX = (TextView)findViewById(R.id.txtAccelerationX);
+        txtAccY = (TextView)findViewById(R.id.txtAccelerationY);
+        txtAccZ = (TextView)findViewById(R.id.txtAccelerationZ);
+        txtMagneticX = (TextView)findViewById(R.id.txtMagneticX);
+        txtMagneticY = (TextView)findViewById(R.id.txtMagneticY);
+        txtMagneticZ = (TextView)findViewById(R.id.txtMagneticZ);
+        txtGravityX = (TextView)findViewById(R.id.txtGravityX);
+        txtGravityY = (TextView)findViewById(R.id.txtGravityY);
+        txtGravityZ = (TextView)findViewById(R.id.txtGravityZ);
 
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         accSensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);

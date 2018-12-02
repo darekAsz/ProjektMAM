@@ -38,11 +38,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent;
 
         switch (v.getId()) {
+
             case R.id.layoutSensors:
                 intent = new Intent(this, SensorActivity.class);
                 startActivity(intent);
                 break;
             case R.id.layoutCamera:
+                intent = new Intent(this, GooglyEyesActivity.class);
+                startActivity(intent);
                 break;
             case R.id.layoutVR:
                 intent = new Intent(this, SplitScreenActivity.class);
