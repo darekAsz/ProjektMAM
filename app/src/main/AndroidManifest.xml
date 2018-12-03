@@ -33,7 +33,28 @@
         </activity>
         <activity android:name=".SensorActivity"></activity>
         <activity android:name=".GooglyEyesActivity"></activity>
-        <activity android:name=".SplitScreenActivity"></activity>
+        <activity android:name=".SplitScreenActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode|navigation|density"
+            android:enableVrMode="@string/gvr_vr_mode_component"
+            android:resizeableActivity="false">
+            <meta-data android:name="com.google.android.vr.icon"
+                android:resource="@drawable/hello_vr_icon_front" />
+            <meta-data android:name="com.google.android.vr.icon_background"
+                android:resource="@drawable/hello_vr_icon_back" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="com.google.intent.category.CARDBOARD" />
+
+                <!-- The DAYDREAM category should only be declared by Activities that are Daydream
+                     compatible. Daydream compatible apps should typically use the Daydream
+                     controller APIs directly, however in this sample app we instead rely on
+                     Cardboard trigger emulation. -->
+                <category android:name="com.google.intent.category.DAYDREAM" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
